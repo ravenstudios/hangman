@@ -6,25 +6,48 @@ public class ShowLetter : MonoBehaviour
 {
     [SerializeField] SpriteRenderer sb;
 
+    public char c;
+
+    private void Awake()
+    {
+        sb = GetComponent<SpriteRenderer>();
+        
+        
+        
+    }
+
+
+    private void Update()
+    {
+        if (c == ' ')
+        {
+            sb.sprite = null;
+        }
+    }
     string letter;
 
     [SerializeField] Sprite[] spriteArray;
 
-    void Show()
+
+    public char GetChar()
     {
-        sb.sprite = spriteArray[0];
+        return c;
     }
 
 
-    // Start is called before the first frame update
-    void Start()
+    public void SetChar(char chr)
+    {
+        c = chr;
+    }
+
+
+    public void Show(char c)
     {
         
+        sb.sprite = spriteArray[c - 65];
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
+
+

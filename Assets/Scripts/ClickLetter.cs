@@ -8,13 +8,18 @@ public class ClickLetter : MonoBehaviour
     GameObject gameManager;
 
     [SerializeField] char c;
-
+    [SerializeField] float fallDelay;
     Rigidbody2D rb;
+    BoxCollider2D bc;
 
     void Awake()
     {
         
         rb = GetComponent<Rigidbody2D>();
+        bc = GetComponent<BoxCollider2D>();
+
+
+
         gameManager = GameObject.Find("GameManager");
     }
 
@@ -36,8 +41,22 @@ public class ClickLetter : MonoBehaviour
         Debug.Log("mouse down: " + GetChar());
         gameManager.GetComponent<GameManager>().Guess(c);
         
-        //rb.isKinematic = false;
+        rb.isKinematic = false;
+        Debug.Log("clik");
+        StartCoroutine(DelayAction(fallDelay));
         
         
     }
+
+
+    IEnumerator DelayAction(float delayTime)
+    {
+        //Wait for the specified delay time before continuing.
+        yield return new WaitForSeconds(delayTime);
+
+        //Do the action after the delay time has finished.
+        Debug.Log("after");
+        bc.enabled = false;
+    }
 }
+

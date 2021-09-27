@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   c: 0
+  fallDelay: 1
 --- !u!50 &-3460863326079997647
 Rigidbody2D:
   serializedVersion: 4

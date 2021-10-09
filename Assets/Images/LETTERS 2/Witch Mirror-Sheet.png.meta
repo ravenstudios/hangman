@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: c5258f164d4c744b893b9d0b047e4298
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8607009208592229526
+    second: Witch Mirror-Sheet_0
+  - first:
+      213: -447655556506859187
+    second: Witch Mirror-Sheet_1
+  - first:
+      213: -2006360793218916356
+    second: Witch Mirror-Sheet_2
+  - first:
+      213: 5446028018105873300
+    second: Witch Mirror-Sheet_3
+  - first:
+      213: -4964877283457304239
+    second: Witch Mirror-Sheet_4
+  - first:
+      213: -6401095701901621955
+    second: Witch Mirror-Sheet_5
+  - first:
+      213: 1892833568254566749
+    second: Witch Mirror-Sheet_6
+  - first:
+      213: -3717004350461217027
+    second: Witch Mirror-Sheet_7
+  - first:
+      213: 4466562217579692901
+    second: Witch Mirror-Sheet_8
+  - first:
+      213: 1306067343583179650
+    second: Witch Mirror-Sheet_9
+  - first:
+      213: 5455547122208277187
+    second: Witch Mirror-Sheet_10
+  - first:
+      213: -4350878820744861924
+    second: Witch Mirror-Sheet_11
+  - first:
+      213: -267761498996302124
+    second: Witch Mirror-Sheet_12
+  - first:
+      213: -4116428804648090844
+    second: Witch Mirror-Sheet_13
+  - first:
+      213: 4687955866368953727
+    second: Witch Mirror-Sheet_14
+  - first:
+      213: -1933404019708831079
+    second: Witch Mirror-Sheet_15
+  - first:
+      213: -9039675394475283657
+    second: Witch Mirror-Sheet_16
+  - first:
+      213: 6892104553291774930
+    second: Witch Mirror-Sheet_17
+  - first:
+      213: 7494723428413920584
+    second: Witch Mirror-Sheet_18
+  - first:
+      213: -2495468188279075851
+    second: Witch Mirror-Sheet_19
+  - first:
+      213: 8602381026241234127
+    second: Witch Mirror-Sheet_20
+  - first:
+      213: -3220856850282343316
+    second: Witch Mirror-Sheet_21
+  - first:
+      213: 5691939060366755401
+    second: Witch Mirror-Sheet_22
+  - first:
+      213: 7079817209961784469
+    second: Witch Mirror-Sheet_23
+  - first:
+      213: 7630959980052856471
+    second: Witch Mirror-Sheet_24
+  - first:
+      213: -5185863641741260829
+    second: Witch Mirror-Sheet_25
+  - first:
+      213: 1854738884374109786
+    second: Witch Mirror-Sheet_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694e7a8f54d327770800000000000000
+      internalID: 8607009208592229526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49cda4a4ab99c9f0800000000000000
+      internalID: -447655556506859187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff5aec1d79f724e0800000000000000
+      internalID: -2006360793218916356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4937600d0ad249b40800000000000000
+      internalID: 5446028018105873300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159fe1e6a66391bb0800000000000000
+      internalID: -4964877283457304239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35cfd2af5dba27a0800000000000000
+      internalID: -6401095701901621955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51afb60a12b44a10800000000000000
+      internalID: 1892833568254566749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df67d2e9c3c8a6cc0800000000000000
+      internalID: -3717004350461217027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563c40a0caa6cfd30800000000000000
+      internalID: 4466562217579692901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28373034455102210800000000000000
+      internalID: 1306067343583179650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c201a2f33ff5bb40800000000000000
+      internalID: 5455547122208277187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c176bb4b3c29e93c0800000000000000
+      internalID: -4350878820744861924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de9cc7d558b84cf0800000000000000
+      internalID: -267761498996302124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423c3cbdfc18fd6c0800000000000000
+      internalID: -4116428804648090844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d41a9c507fe0140800000000000000
+      internalID: 4687955866368953727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a51f5a94b2b25e0800000000000000
+      internalID: -1933404019708831079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b267b7f1f9c8280800000000000000
+      internalID: -9039675394475283657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbfec5439ca5af50800000000000000
+      internalID: 6892104553291774930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845d868df3b920860800000000000000
+      internalID: 7494723428413920584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb865187e05e5dd0800000000000000
+      internalID: -2495468188279075851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc44bab47fbc16770800000000000000
+      internalID: 8602381026241234127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64998e62c73d43d0800000000000000
+      internalID: -3220856850282343316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946c4501b64ddfe40800000000000000
+      internalID: 5691939060366755401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5942872fd30904260800000000000000
+      internalID: 7079817209961784469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79eb54adbad96e960800000000000000
+      internalID: 7630959980052856471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e706646e7c1808b0800000000000000
+      internalID: -5185863641741260829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Witch Mirror-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 19
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e1932403b5db910800000000000000
+      internalID: 1854738884374109786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

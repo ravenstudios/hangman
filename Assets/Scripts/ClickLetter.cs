@@ -38,11 +38,9 @@ public class ClickLetter : MonoBehaviour
     void OnMouseDown()
     {
 
-        Debug.Log("mouse down: " + GetChar());
         gameManager.GetComponent<GameManager>().Guess(c);
         
         rb.isKinematic = false;
-        Debug.Log("clik");
         StartCoroutine(DelayAction(fallDelay));
         
         

@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class ShowLetter : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer sb;
+    [SerializeField] SpriteRenderer sr;
+    [SerializeField] Sprite[] spriteArray;
 
-    public char c;
+    char c;
+    
 
     private void Awake()
     {
-        sb = GetComponent<SpriteRenderer>();
+        sr = GetComponent<SpriteRenderer>();
         
         
         
@@ -21,12 +23,12 @@ public class ShowLetter : MonoBehaviour
     {
         if (c == ' ')
         {
-            sb.sprite = null;
+            sr.sprite = null;
         }
     }
-    string letter;
+    
 
-    [SerializeField] Sprite[] spriteArray;
+    
 
 
     public char GetChar()
@@ -44,7 +46,7 @@ public class ShowLetter : MonoBehaviour
     public void Show(char c)
     {
         
-        sb.sprite = spriteArray[c - 65];
+        sr.sprite = spriteArray[c - 65];
     }
 
 

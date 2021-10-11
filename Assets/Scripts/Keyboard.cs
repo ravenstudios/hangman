@@ -30,7 +30,7 @@ public class Keyboard : MonoBehaviour
                 pos = transform.position + new Vector3(xOffset * i - 10,yOffset * 2, 1);
             }
 
-            else if (i > 19)
+            else if (i > 18)
             {
                 pos = transform.position + new Vector3(xOffset * i - 20,yOffset * 3, 1);
             }

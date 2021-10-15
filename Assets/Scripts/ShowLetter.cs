@@ -13,9 +13,6 @@ public class ShowLetter : MonoBehaviour
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        
-        
-        
     }
 
 
@@ -27,9 +24,6 @@ public class ShowLetter : MonoBehaviour
         }
     }
     
-
-    
-
 
     public char GetChar()
     {

@@ -4727,7 +4727,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ca2ad86fc84634817be702c8f04d1561, type: 3}
   - {fileID: 8300000, guid: 28fcface1a3ba459eb9fe60b1efe7329, type: 3}
   - {fileID: 8300000, guid: 950202ca80f1840eca167ddaf93fbfe1, type: 3}
-  soundFXLevel: 5
+  - {fileID: 8300000, guid: 43ae44be23349414bbdcc73ff2568753, type: 3}
+  soundFXLevel: 0.3
+  guessesLeft: 6
 --- !u!1001 &1138677107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8574,7 +8576,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 43ae44be23349414bbdcc73ff2568753, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1

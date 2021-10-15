@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioClip[] sounds;
     [SerializeField] float soundFXLevel;
     [SerializeField] int guessesLeft;
+    [SerializeField] GameObject health;
 
     int numberOfgusses;
 
@@ -42,7 +43,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
 
-
+        health.GetComponent<Health>().Show(guessesLeft);
         string[][] words = { plants, animales, witchCraft, witchyTools, easy };
 
         int catagoryIndex = Array.IndexOf(words, catagory);
@@ -78,8 +79,7 @@ public class GameManager : MonoBehaviour
 
 
 
-            //ShowLetter script = displayLetter.GetComponent<ShowLetter>();
-            //script.Show(unicode);
+           
 
 
         }
@@ -124,8 +124,7 @@ public class GameManager : MonoBehaviour
 
         }
 
-        audioSource.PlayOneShot(sounds[3], soundFXLevel);//wrong awnser
-        guessesLeft--;
+        WrongGuess();
 
         
 
@@ -139,7 +138,13 @@ public class GameManager : MonoBehaviour
     }
 
 
-    //compare letters and if match show letter
+    void WrongGuess()
+    {
+        guessesLeft--;
+        health.GetComponent<Health>().Show(guessesLeft);
+        audioSource.PlayOneShot(sounds[3], soundFXLevel);//wrong awnser
+        
+    }
 }
 
 //if miss show part of hangman

@@ -1,0 +1,732 @@
+fileFormatVersion: 2
+guid: 45fe266927b20456f8367dcffead860d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3311052270969896787
+    second: Tile block-witch at the stake-Sheet-letters-only_0
+  - first:
+      213: 1130856626549959698
+    second: Tile block-witch at the stake-Sheet-letters-only_1
+  - first:
+      213: -3505689874615086661
+    second: Tile block-witch at the stake-Sheet-letters-only_2
+  - first:
+      213: -3145532783844795136
+    second: Tile block-witch at the stake-Sheet-letters-only_3
+  - first:
+      213: -4831840130067324724
+    second: Tile block-witch at the stake-Sheet-letters-only_4
+  - first:
+      213: 4562287374414906073
+    second: Tile block-witch at the stake-Sheet-letters-only_5
+  - first:
+      213: 7892060864807569317
+    second: Tile block-witch at the stake-Sheet-letters-only_6
+  - first:
+      213: -733888212642318037
+    second: Tile block-witch at the stake-Sheet-letters-only_7
+  - first:
+      213: -1367571639297842741
+    second: Tile block-witch at the stake-Sheet-letters-only_8
+  - first:
+      213: -1748327435384379277
+    second: Tile block-witch at the stake-Sheet-letters-only_9
+  - first:
+      213: 2891014664647322264
+    second: Tile block-witch at the stake-Sheet-letters-only_10
+  - first:
+      213: -7718963233606982739
+    second: Tile block-witch at the stake-Sheet-letters-only_11
+  - first:
+      213: -1531543825946073760
+    second: Tile block-witch at the stake-Sheet-letters-only_12
+  - first:
+      213: 7208762433885995760
+    second: Tile block-witch at the stake-Sheet-letters-only_13
+  - first:
+      213: -4411619144171254109
+    second: Tile block-witch at the stake-Sheet-letters-only_14
+  - first:
+      213: 2377352104604091023
+    second: Tile block-witch at the stake-Sheet-letters-only_15
+  - first:
+      213: -7979027810212691207
+    second: Tile block-witch at the stake-Sheet-letters-only_16
+  - first:
+      213: 7110248873079071892
+    second: Tile block-witch at the stake-Sheet-letters-only_17
+  - first:
+      213: -7950454325443901141
+    second: Tile block-witch at the stake-Sheet-letters-only_18
+  - first:
+      213: -8444374469800513266
+    second: Tile block-witch at the stake-Sheet-letters-only_19
+  - first:
+      213: 1930021917053787398
+    second: Tile block-witch at the stake-Sheet-letters-only_20
+  - first:
+      213: -4848161475218258551
+    second: Tile block-witch at the stake-Sheet-letters-only_21
+  - first:
+      213: -7200518316205487521
+    second: Tile block-witch at the stake-Sheet-letters-only_22
+  - first:
+      213: -814427517539800056
+    second: Tile block-witch at the stake-Sheet-letters-only_23
+  - first:
+      213: -4902994379127413213
+    second: Tile block-witch at the stake-Sheet-letters-only_24
+  - first:
+      213: -91386105010033134
+    second: Tile block-witch at the stake-Sheet-letters-only_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 11
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0c6149087cc02d0800000000000000
+      internalID: -3311052270969896787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 11
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c286d3c1c91bf00800000000000000
+      internalID: 1130856626549959698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 11
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb152ea02a9495fc0800000000000000
+      internalID: -3505689874615086661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 11
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dd59d4992d854d0800000000000000
+      internalID: -3145532783844795136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 10
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc02cdb700bd1fcb0800000000000000
+      internalID: -4831840130067324724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 9
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2004be130805f30800000000000000
+      internalID: 4562287374414906073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_6
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 11
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a70e98ea8b368d60800000000000000
+      internalID: 7892060864807569317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_7
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 9
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29bb941f84b0d5f0800000000000000
+      internalID: -733888212642318037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_8
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 11
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1e0caf6d8650de0800000000000000
+      internalID: -1367571639297842741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 8
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37828d6e571bcb7e0800000000000000
+      internalID: -1748327435384379277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 9
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89aafbe2582fe1820800000000000000
+      internalID: 2891014664647322264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 11
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da32e8af5dbb0e490800000000000000
+      internalID: -7718963233606982739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 12
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065aa88310ddebae0800000000000000
+      internalID: -1531543825946073760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_13
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 12
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f284fd6d3baa0460800000000000000
+      internalID: 7208762433885995760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_14
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 12
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae0c5b13c7c6c2c0800000000000000
+      internalID: -4411619144171254109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_15
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 11
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8244f4b42d0ef020800000000000000
+      internalID: 2377352104604091023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_16
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 9
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f24f473b7cc44190800000000000000
+      internalID: -7979027810212691207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_17
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 11
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494ef78adadaca260800000000000000
+      internalID: 7110248873079071892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_18
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 11
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29c2f01aef4aa190800000000000000
+      internalID: -7950454325443901141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_19
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 11
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01b921f82e8fca80800000000000000
+      internalID: -8444374469800513266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_20
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 10
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d95b635b0d8ca10800000000000000
+      internalID: 1930021917053787398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_21
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 11
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985c1ef23ded7bcb0800000000000000
+      internalID: -4848161475218258551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_22
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 11
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ac0ebcdbe921c90800000000000000
+      internalID: -7200518316205487521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_23
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 12
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cacb1ec7292b4f0800000000000000
+      internalID: -814427517539800056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_24
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 9
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326af50e69015fbb0800000000000000
+      internalID: -4902994379127413213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile block-witch at the stake-Sheet-letters-only_25
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 12
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e687952d45bbef0800000000000000
+      internalID: -91386105010033134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

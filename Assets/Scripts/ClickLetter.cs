@@ -41,7 +41,10 @@ public class ClickLetter : MonoBehaviour
         gameManager.GetComponent<GameManager>().Guess(c);
         
         rb.isKinematic = false;
-        StartCoroutine(DelayAction(fallDelay));
+        bc.enabled = false;
+        float x = Random.Range(-10.0f, 10.0f);
+        rb.AddForce(new Vector2(x, 10), ForceMode2D.Impulse);
+        //StartCoroutine(DelayAction(fallDelay));
         
         
     }
@@ -53,7 +56,6 @@ public class ClickLetter : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
 
         //Do the action after the delay time has finished.
-        Debug.Log("after");
         bc.enabled = false;
     }
 }

@@ -40,7 +40,6 @@ public class Keyboard : MonoBehaviour
             obj.GetComponent<SpriteRenderer>().sprite = spriteArray[i];
             //obj.GetComponent<Transform>().localScale = new Vector3(2, 2, 1);
             char c = (char)(65 + i);
-            Debug.Log(obj);
             obj.GetComponent<ClickLetter>().SetChar(c);
         }
         

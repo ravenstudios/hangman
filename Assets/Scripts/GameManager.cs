@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
-
 using System.Linq;
 using System;
 using Random = UnityEngine.Random;
@@ -20,7 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] float soundFXLevel;
     [SerializeField] int guessesLeft;
     [SerializeField] GameObject health;
-    //[SerializeField] Slider soundFXLevelSlider;
+    [SerializeField] Slider soundFXLevelSlider;
 
     int numberOfgusses;
 
@@ -130,7 +129,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-    void OnValueChanged(float value)
+    public void OnValueChanged(float value)
     {
         
         soundFXLevel = value;

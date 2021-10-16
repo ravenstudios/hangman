@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
+
 using System.Linq;
 using System;
 using Random = UnityEngine.Random;
@@ -18,6 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] float soundFXLevel;
     [SerializeField] int guessesLeft;
     [SerializeField] GameObject health;
+    //[SerializeField] Slider soundFXLevelSlider;
 
     int numberOfgusses;
 
@@ -76,28 +79,13 @@ public class GameManager : MonoBehaviour
             {
                 letterObjects.Add(displayLetter);
             }
-
-
-
-           
-
-
         }
-
-
     }
 
     public void Guess(char letter)
     {
-
-        //click a letter to call this function
-
-        //int i = word.IndexOf(letter);
-
         for (int i = 0; i < letterObjects.Count; i++)
         {
-
-
             char l = letterObjects[i].GetComponent<ShowLetter>().GetChar();
 
             if (l == letter)
@@ -117,11 +105,6 @@ public class GameManager : MonoBehaviour
                 return;
 
             }
-           
-           
-
-            
-
         }
 
         WrongGuess();
@@ -145,9 +128,17 @@ public class GameManager : MonoBehaviour
         audioSource.PlayOneShot(sounds[3], soundFXLevel);//wrong awnser
         
     }
+
+
+    void OnValueChanged(float value)
+    {
+        
+        soundFXLevel = value;
+    }
+    
 }
 
-//if miss show part of hangman
+
 
 
 

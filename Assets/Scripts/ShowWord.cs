@@ -14,7 +14,6 @@ public class ShowWord : MonoBehaviour
     
     void Start()
     {
-        Debug.Log("show word start");
         word = gameObject.GetComponentInParent<WordGenerator>().GenerateWord();
 
         for (int i = 0; i < word.Length; i++)

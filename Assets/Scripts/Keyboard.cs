@@ -37,6 +37,7 @@ public class Keyboard : MonoBehaviour
 
 
             GameObject obj = Instantiate(myPrefab, pos, Quaternion.identity);
+            obj.transform.parent = gameObject.transform;
             obj.GetComponent<SpriteRenderer>().sprite = spriteArray[i];
             //obj.GetComponent<Transform>().localScale = new Vector3(2, 2, 1);
             char c = (char)(65 + i);

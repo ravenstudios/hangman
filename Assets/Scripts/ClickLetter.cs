@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class ClickLetter : MonoBehaviour
 {
@@ -37,12 +38,15 @@ public class ClickLetter : MonoBehaviour
 
     void OnMouseDown()
     {
-
-        gameManager.GetComponent<GameManager>().Guess(c);
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+        gameManager.GetComponent<Guess>().GuessLetter(c);
         
         rb.isKinematic = false;
         bc.enabled = false;
-        float x = Random.Range(-10.0f, 10.0f);
+        float x = Random.Range(-10.0f, 10.0f);  
         rb.AddForce(new Vector2(x, 10), ForceMode2D.Impulse);
         //StartCoroutine(DelayAction(fallDelay));
         

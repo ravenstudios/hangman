@@ -52,7 +52,7 @@ public class Guess : MonoBehaviour
                     return;
                 }
 
-                return;
+                //return;
 
             }
         }

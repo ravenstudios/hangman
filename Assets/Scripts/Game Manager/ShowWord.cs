@@ -14,7 +14,7 @@ public class ShowWord : MonoBehaviour
     
     void Start()
     {
-        word = gameObject.GetComponentInParent<WordGenerator>().GenerateWord();
+        word = GetComponentInParent<WordGenerator>().GenerateWord();
 
         for (int i = 0; i < word.Length; i++)
         {
@@ -23,12 +23,13 @@ public class ShowWord : MonoBehaviour
 
             letters.Add(c);
 
-            Vector3 v = new Vector3(i, 0, 0);
 
-            GameObject displayLetter = Instantiate(prefab, v, Quaternion.identity) as GameObject;
+            Vector3 v = new Vector3(i - 8, 3, 0);
+
+            GameObject displayLetter = Instantiate(prefab, v, Quaternion.identity);
             displayLetter.transform.parent = gameObject.transform;
             
-            displayLetter.gameObject.GetComponentInParent<ShowLetter>().SetChar(c);
+            displayLetter.GetComponentInParent<ShowLetter>().SetChar(c);
 
             if (c != ' ')
             {

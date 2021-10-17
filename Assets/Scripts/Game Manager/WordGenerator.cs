@@ -36,8 +36,8 @@ public class WordGenerator : MonoBehaviour
         int randWordIndex = Random.Range(0, randomCatogory.Length);
         word = randomCatogory[randWordIndex];
         word = word.ToUpper();
-
-        //word = "CAT";
+        
+        word = "CATT";
         return word;
     }
 }

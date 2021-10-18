@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShowWord : MonoBehaviour
 {
-    string word;
+    string catagory, word;
     [SerializeField] GameObject prefab;
     List<char> letters = new List<char>();
     [SerializeField] float gap;
@@ -14,7 +14,12 @@ public class ShowWord : MonoBehaviour
     
     void Start()
     {
-        word = GetComponentInParent<WordGenerator>().GenerateWord();
+        catagory += "CATEGORY";
+        catagory += GetComponentInParent<WordGenerator>().GenerateWord()[0];
+        
+        word = GetComponentInParent<WordGenerator>().GenerateWord()[1];
+
+
 
         for (int i = 0; i < word.Length; i++)
         {
@@ -35,6 +40,12 @@ public class ShowWord : MonoBehaviour
             {
                 letterObjects.Add(displayLetter);
             }
+        }
+
+
+        for (int i = 0; i < catagory.Length; i++)
+        {
+
         }
     }
 

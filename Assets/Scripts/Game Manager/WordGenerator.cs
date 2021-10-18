@@ -22,22 +22,26 @@ public class WordGenerator : MonoBehaviour
     //Easy
     string[] easy = { "Hallloween", "Pumpkin", "Orange", "Black", "Witch", "Candy", "Trick or Treat", "October" };
 
+    string[] catagories = { "Plants", "Animales", "Witch Craft", "Witchy Tools", "Easy"};
+
     string word;
 
+    string category;
 
-
-    public string GenerateWord()
+    public string[] GenerateWord()
     {
         //adds all lists in one array 
         string[][] words = { plants, animales, witchCraft, witchyTools, easy };
         int randCatagoryndex = Random.Range(0, words.Length);
-
+        category = catagories[randCatagoryndex];
         string[] randomCatogory = words[randCatagoryndex];
         int randWordIndex = Random.Range(0, randomCatogory.Length);
         word = randomCatogory[randWordIndex];
         word = word.ToUpper();
-        
-        word = "CATT";
-        return word;
+
+        Debug.Log(word);
+        Debug.Log(category);
+        string[] result = {category, word }; 
+        return result;
     }
 }

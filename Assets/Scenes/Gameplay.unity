@@ -401,7 +401,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134865588}
   m_LocalRotation: {x: -0, y: -0, z: 0.99978936, w: -0.02052376}
-  m_LocalPosition: {x: -0.4234004, y: 1.7100024, z: -1.29}
+  m_LocalPosition: {x: -0.52, y: 4.11, z: -1.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 230009346}
@@ -772,6 +772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 177008568}
   - component: {fileID: 177008567}
+  - component: {fileID: 177008569}
   m_Layer: 0
   m_Name: Parametric Light 2D (1)
   m_TagString: Untagged
@@ -791,11 +792,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LightType: 0
+  m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.038047336, g: 0.4245283, b: 0.0700119, a: 1}
-  m_Intensity: 1
+  m_Intensity: 5.33
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 230e31020000000037a802dd
   m_LightCookieSprite: {fileID: 0}
@@ -812,8 +813,8 @@ MonoBehaviour:
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 4
   m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightParametricRadius: 0.21
+  m_ShapeLightFalloffSize: 1.49
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: -0.5, y: -0.5, z: 0}
@@ -828,12 +829,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177008566}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.2565994, y: -7.6699977, z: -1.29}
+  m_LocalPosition: {x: 5.2565994, y: -9.15, z: -1.29}
   m_LocalScale: {x: 21.2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 230009346}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &177008569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177008566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cab26316c6c7b477f9d5f54f88252946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  l: {fileID: 177008567}
+  min: 3
+  max: 6
 --- !u!4 &186991232
 Transform:
   m_ObjectHideFlags: 0

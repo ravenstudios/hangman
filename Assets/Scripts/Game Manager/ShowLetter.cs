@@ -39,8 +39,11 @@ public class ShowLetter : MonoBehaviour
 
     public void Show(char c)
     {
+        if (c != ' ')
+        {
+            sr.sprite = spriteArray[c - 65];
+        }
         
-        sr.sprite = spriteArray[c - 65];
     }
 
 

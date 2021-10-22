@@ -43,14 +43,25 @@ public class ClickLetter : MonoBehaviour
             return;
         }
         gameManager.GetComponent<Guess>().GuessLetter(c);
+
+        Explode();
         
+        
+        
+    }
+
+    void Fall()
+    {
+        rb.isKinematic = false;
+    }
+
+    void Explode()
+    {
         rb.isKinematic = false;
         bc.enabled = false;
-        float x = Random.Range(-10.0f, 10.0f);  
+        float x = Random.Range(-10.0f, 10.0f);
         rb.AddForce(new Vector2(x, 10), ForceMode2D.Impulse);
         //StartCoroutine(DelayAction(fallDelay));
-        
-        
     }
 
 

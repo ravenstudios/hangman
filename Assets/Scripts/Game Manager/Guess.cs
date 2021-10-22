@@ -14,8 +14,8 @@ public class Guess : MonoBehaviour
     [SerializeField] AudioSource wonSound;
     [SerializeField] AudioSource lostSound;
 
-    [SerializeField] GameObject resultArea;
-
+    [SerializeField] GameObject letterObject;
+    [SerializeField] GameObject keyboard;
     [SerializeField] int guessesLeft;
 
      
@@ -23,8 +23,8 @@ public class Guess : MonoBehaviour
     public void GuessLetter(char letter)
     {
         bool didGuessRight = false;
-        word = resultArea.GetComponent<ShowWord>().GetWord();
-        letterObjects = resultArea.GetComponent<ShowWord>().GetLetters();
+        word = letterObject.GetComponent<ShowWord>().GetWord();
+        letterObjects = letterObject.GetComponent<ShowWord>().GetLetters();
 
         for (int i = 0; i < letterObjects.Count; i++)
         {
@@ -41,7 +41,16 @@ public class Guess : MonoBehaviour
 
                 if (numberOfgusses == word.Length)
                 {
-                    Debug.Log("word lentgth: " + word.Length + "   numOgGusses: " + numberOfgusses);
+
+                    Rigidbody2D[] letterRbs = keyboard.GetComponentsInChildren<Rigidbody2D>();
+
+                    foreach (var letRB in letterRbs)
+                    {
+                        letRB.isKinematic = false;
+                        
+                        float x = Random.Range(-10.0f, 10.0f);
+                        letRB.AddForce(new Vector2(x, 10), ForceMode2D.Impulse);
+                    }
                     mainMusic.Stop();
                     wonSound.Play();
                     return;
@@ -62,6 +71,15 @@ public class Guess : MonoBehaviour
 
         if (guessesLeft == 0)
         {
+            Rigidbody2D[] letterRbs = keyboard.GetComponentsInChildren<Rigidbody2D>();
+
+            foreach (var letRB in letterRbs)
+            {
+                letRB.isKinematic = false;
+
+            
+            }
+
             mainMusic.Stop();
             lostSound.Play();
             return;
@@ -77,4 +95,5 @@ public class Guess : MonoBehaviour
         wrongAwnserSound.Play();
 
     }
+
 }

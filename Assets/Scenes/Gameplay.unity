@@ -6660,12 +6660,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfgusses: 0
+  word: 
   mainMusic: {fileID: 2030389128}
   rightAwnserSound: {fileID: 194622118}
   wrongAwnserSound: {fileID: 702212055}
   wonSound: {fileID: 1952272684}
   lostSound: {fileID: 246096702}
-  resultArea: {fileID: 1614614284}
+  letterObject: {fileID: 1614614284}
+  keyboard: {fileID: 1797278753}
   guessesLeft: 6
 --- !u!1001 &1138677107
 PrefabInstance:

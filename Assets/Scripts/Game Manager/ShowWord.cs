@@ -7,7 +7,8 @@ public class ShowWord : MonoBehaviour
     string catagory, word;
     [SerializeField] GameObject dislplayLetterPrefab;
     [SerializeField] GameObject categoryLetterPrefab;
-    [SerializeField] GameObject category;
+    [SerializeField] GameObject categoryWord1;
+    [SerializeField] GameObject categoryWord2;
     List<char> letters = new List<char>();
     [SerializeField] float gap;
 
@@ -16,7 +17,7 @@ public class ShowWord : MonoBehaviour
     
     void Start()
     {
-        catagory += "CATEGORY ";
+        
         catagory += GetComponentInParent<WordGenerator>().GenerateWord()[0];
 
         catagory = catagory.ToUpper();
@@ -47,6 +48,23 @@ public class ShowWord : MonoBehaviour
         }
 
 
+        string cat = "CATEGORY";
+        for (int i = 0; i < cat.Length; i++)
+        {
+            
+
+
+            
+            Vector3 v = new Vector3(i - 8, 6, 0);
+
+            GameObject categoryLetter = Instantiate(categoryLetterPrefab, v, Quaternion.identity);
+            categoryLetter.GetComponent<CategoryLetter>().SetChar(cat[i]);
+            categoryLetter.transform.parent = categoryWord1.transform;
+            
+
+        }
+
+
         for (int i = 0; i < catagory.Length; i++)
         {
             char c = catagory[i];
@@ -54,11 +72,11 @@ public class ShowWord : MonoBehaviour
 
             if (c != ' ')
             {
-                Vector3 v = new Vector3(i - 8, 6, 0);
+                Vector3 v = new Vector3(i - 8, 5, 0);
 
                 GameObject categoryLetter = Instantiate(categoryLetterPrefab, v, Quaternion.identity);
                 categoryLetter.GetComponent<CategoryLetter>().SetChar(catagory[i]);
-                categoryLetter.transform.parent = category.transform;
+                categoryLetter.transform.parent = categoryWord2.transform;
             }
             
         }

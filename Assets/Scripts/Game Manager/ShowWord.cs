@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class ShowWord : MonoBehaviour
 {
-    string catagory, word;
+    static string catagory, word;
     [SerializeField] GameObject dislplayLetterPrefab;
     [SerializeField] GameObject categoryLetterPrefab;
     [SerializeField] GameObject categoryWord1;
     [SerializeField] GameObject categoryWord2;
-    List<char> letters = new List<char>();
+    static List<char> letters = new List<char>();
     [SerializeField] float gap;
 
     List<GameObject> letterObjects = new List<GameObject>();
 
     
-    void Start()
+    void Awake()
     {
         
         catagory += GetComponentInParent<WordGenerator>().GenerateWord()[0];
@@ -23,12 +23,13 @@ public class ShowWord : MonoBehaviour
         catagory = catagory.ToUpper();
 
         word = GetComponentInParent<WordGenerator>().GenerateWord()[1];
-
+        
+        Debug.Log("get word function" + word);
 
 
         for (int i = 0; i < word.Length; i++)
         {
-            
+
             char c = word[i];
 
             letters.Add(c);
@@ -84,6 +85,7 @@ public class ShowWord : MonoBehaviour
 
     public string GetWord()
     {
+        
         return word;
     }
 

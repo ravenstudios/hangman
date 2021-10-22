@@ -6,7 +6,7 @@ public class Guess : MonoBehaviour
 {
     [SerializeField] int numberOfgusses;
     List<GameObject> letterObjects = new List<GameObject>();
-    string word;
+    [SerializeField]  string word;
 
     [SerializeField] AudioSource mainMusic;
     [SerializeField] AudioSource rightAwnserSound;
@@ -18,23 +18,14 @@ public class Guess : MonoBehaviour
 
     [SerializeField] int guessesLeft;
 
-
-    void Start()
-    {
-
-        //word = Component<GameObject>("dft").GetWord();
-        var resultAreaScript = resultArea.GetComponent<ShowWord>();
-        word = resultAreaScript.GetWord();
-        letterObjects = resultAreaScript.GetLetters();
-    }
-
-    void Update()
-    {
-        
-    }
+     
 
     public void GuessLetter(char letter)
     {
+        bool didGuessRight = false;
+        word = resultArea.GetComponent<ShowWord>().GetWord();
+        letterObjects = resultArea.GetComponent<ShowWord>().GetLetters();
+
         for (int i = 0; i < letterObjects.Count; i++)
         {
             char l = letterObjects[i].GetComponent<ShowLetter>().GetChar();
@@ -45,9 +36,13 @@ public class Guess : MonoBehaviour
 
                 rightAwnserSound.Play();
                 numberOfgusses++;
+                didGuessRight = true;
+
 
                 if (numberOfgusses == word.Length)
                 {
+                    Debug.Log("word lentgth: " + word.Length + "   numOgGusses: " + numberOfgusses);
+                    mainMusic.Stop();
                     wonSound.Play();
                     return;
                 }
@@ -57,14 +52,18 @@ public class Guess : MonoBehaviour
             }
         }
 
-        WrongGuess();
+        if (!didGuessRight)
+        {
+            WrongGuess();
+        }
+        
 
 
 
         if (guessesLeft == 0)
         {
             mainMusic.Stop();
-            wonSound.Play();
+            lostSound.Play();
             return;
         }
 

@@ -20,7 +20,7 @@ public class WordGenerator : MonoBehaviour
     string[] witchyTools = { "Cauldron", "Broomstick", "Eyeballs", "Eye of Newt", "Spell Book" };
 
     //Easy
-    string[] easy = { "Hallloween", "Pumpkin", "Orange", "Black", "Witch", "Candy", "Trick or Treat", "October" };
+    string[] easy = { "Halloween", "Pumpkin", "Orange", "Black", "Witch", "Candy", "Trick or Treat", "October" };
 
     string[] catagories = { "Plants", "Animales", "Witch Craft", "Witchy Tools", "Easy"};
 
@@ -39,8 +39,8 @@ public class WordGenerator : MonoBehaviour
         word = randomCatogory[randWordIndex];
         word = word.ToUpper();
 
-        Debug.Log(word);
-        Debug.Log(category);
+        //Debug.Log(word);
+        //Debug.Log(category);
         string[] result = {category, word }; 
         return result;
     }

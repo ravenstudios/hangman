@@ -6809,6 +6809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1948837644977520111, guid: 31ec88b483f5d480ea27a8ca3d8f6612, type: 3}
+  GuessScript: {fileID: 1098491117}
   parentPos: {fileID: 1085412971}
 --- !u!4 &1085412971
 Transform:
@@ -6971,7 +6972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bee915ababcf4df3aa5fed58db3dd07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfgusses: 0
+  numberOfGusses: 0
   word: 
   mainMusic: {fileID: 2030389128}
   rightAwnserSound: {fileID: 194622118}
@@ -6981,6 +6982,7 @@ MonoBehaviour:
   letterObject: {fileID: 1614614284}
   keyboard: {fileID: 1797278753}
   EndGamePanel: {fileID: 431122846}
+  health: {fileID: 1085412969}
   guessesLeft: 6
 --- !u!1001 &1138677107
 PrefabInstance:
@@ -7376,7 +7378,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1157779523}
         m_TargetAssemblyTypeName: NewGameButton, Assembly-CSharp
-        m_MethodName: NewGameButn
+        m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7440,6 +7442,8 @@ MonoBehaviour:
   endOfGamePanle: {fileID: 431122846}
   mainGameSound: {fileID: 2030389128}
   lettersObj: {fileID: 1614614284}
+  guessScript: {fileID: 1098491117}
+  guesses: 6
 --- !u!1 &1191312450
 GameObject:
   m_ObjectHideFlags: 0

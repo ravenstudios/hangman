@@ -23,7 +23,17 @@ public class ShowWord : MonoBehaviour
 
     public void SetUpGame()
     {
-        
+        //erase old list of letters
+
+        letterObjects.ForEach(delegate(GameObject letter)
+        {
+            Destroy(letter);
+        });
+
+        letterObjects = new List<GameObject>();
+
+
+
         catagory += GetComponentInParent<WordGenerator>().GenerateWord()[0];
 
         catagory = catagory.ToUpper();

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Guess : MonoBehaviour
 {
-    [SerializeField] int numberOfgusses;
+    [SerializeField] int numberOfGusses;
     List<GameObject> letterObjects = new List<GameObject>();
     [SerializeField]  string word;
 
@@ -17,6 +17,7 @@ public class Guess : MonoBehaviour
     [SerializeField] GameObject letterObject;
     [SerializeField] GameObject keyboard;
     [SerializeField] GameObject EndGamePanel;
+    [SerializeField] GameObject health;
     [SerializeField] int guessesLeft;
     bool didGuessRight;
 
@@ -38,7 +39,7 @@ public class Guess : MonoBehaviour
 
             }
 
-            if (numberOfgusses == word.Length)
+            if (numberOfGusses == word.Length)
             {
                 WonGame();
 
@@ -71,7 +72,7 @@ public class Guess : MonoBehaviour
     void WrongGuess()
     {
         guessesLeft--;
-        //health.GetComponent<Health>().Show(guessesLeft);
+        health.GetComponent<Health>().Show(guessesLeft);
         wrongAwnserSound.Play();
 
     }
@@ -81,7 +82,7 @@ public class Guess : MonoBehaviour
         obj.GetComponent<ShowLetter>().Show(letter);
 
         rightAwnserSound.Play();
-        numberOfgusses++;
+        numberOfGusses++;
         didGuessRight = true;
     }
 
@@ -120,4 +121,26 @@ public class Guess : MonoBehaviour
         EndGamePanel.SetActive(true);
         
     }
+
+
+    public void NewGame()
+    {
+        
+        numberOfGusses = 0;
+        guessesLeft = 6;
+        keyboard.GetComponent<Keyboard>().MakeKeyboard();
+        health.GetComponent<Health>().Show(guessesLeft);
+    }
+
+    public int GetGuesses()
+    {
+        return guessesLeft;
+        
+    }
+
+    public void SetGuesses(int g)
+    {
+        guessesLeft = g;
+    }
+
 }

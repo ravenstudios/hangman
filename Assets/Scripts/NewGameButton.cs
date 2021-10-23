@@ -8,14 +8,19 @@ public class NewGameButton : MonoBehaviour
     [SerializeField] GameObject endOfGamePanle;
     [SerializeField] AudioSource mainGameSound;
     [SerializeField] GameObject lettersObj;
+    [SerializeField] GameObject guessScript;
     
 
 
-    public void  NewGameButn ()
+    public void  NewGame()
     {
-        keyboard.GetComponent<Keyboard>().MakeKeyboard();
+        
         endOfGamePanle.SetActive(false);
         mainGameSound.Play();
         lettersObj.GetComponent<ShowWord>().SetUpGame();
+        guessScript.GetComponent<Guess>().NewGame();
+        //reset poitions and guess count
+
+
     }
 }

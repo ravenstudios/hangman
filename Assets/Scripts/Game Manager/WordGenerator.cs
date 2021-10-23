@@ -11,7 +11,7 @@ public class WordGenerator : MonoBehaviour
     string[] plants = { "Belladonna", "Sage", "Lavender", "Rosemary", "Mugwort" };
 
     //Animals
-    string[] animales = { "Bat", "Owl", "Toad", "Spider", "Black Cat" };
+    string[] animals = { "Bat", "Owl", "Toad", "Spider", "Black Cat" };
 
     //Witch Craft
     string[] witchCraft = { "Occult", "Potion", "Hex,", "Enchant", "Magic" };
@@ -22,7 +22,7 @@ public class WordGenerator : MonoBehaviour
     //Easy
     string[] easy = { "Halloween", "Pumpkin", "Orange", "Black", "Witch", "Candy", "Trick or Treat", "October" };
 
-    string[] catagories = { "Plants", "Animales", "Witch Craft", "Witchy Tools", "Easy"};
+    string[] catagories = { "Plants", "Animals", "Witch Craft", "Witchy Tools", "Easy"};
 
     string word;
 
@@ -31,7 +31,7 @@ public class WordGenerator : MonoBehaviour
     public string[] GenerateWord()
     {
         //adds all lists in one array 
-        string[][] words = { plants, animales, witchCraft, witchyTools, easy };
+        string[][] words = { plants, animals, witchCraft, witchyTools, easy };
         int randCatagoryndex = Random.Range(0, words.Length);
         category = catagories[randCatagoryndex];
         string[] randomCatogory = words[randCatagoryndex];

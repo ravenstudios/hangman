@@ -14,7 +14,7 @@ public class WordGenerator : MonoBehaviour
     string[] animals = { "Bat", "Owl", "Toad", "Spider", "Black Cat" };
 
     //Witch Craft
-    string[] witchCraft = { "Occult", "Potion", "Hex,", "Enchant", "Magic" };
+    string[] witchCraft = { "Occult", "Potion", "Hex", "Enchant", "Magic" };
 
     //Witchy Tools
     string[] witchyTools = { "Cauldron", "Broomstick", "Eyeballs", "Eye of Newt", "Spell Book" };

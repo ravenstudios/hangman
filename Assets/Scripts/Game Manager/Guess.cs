@@ -16,13 +16,15 @@ public class Guess : MonoBehaviour
 
     [SerializeField] GameObject letterObject;
     [SerializeField] GameObject keyboard;
+    [SerializeField] GameObject EndGamePanel;
     [SerializeField] int guessesLeft;
+    bool didGuessRight;
 
-     
+
 
     public void GuessLetter(char letter)
     {
-        bool didGuessRight = false;
+        didGuessRight = false;
         word = letterObject.GetComponent<ShowWord>().GetWord();
         letterObjects = letterObject.GetComponent<ShowWord>().GetLetters();
 
@@ -32,33 +34,21 @@ public class Guess : MonoBehaviour
 
             if (l == letter)
             {
-                letterObjects[i].GetComponent<ShowLetter>().Show(letter);
-
-                rightAwnserSound.Play();
-                numberOfgusses++;
-                didGuessRight = true;
-
-
-                if (numberOfgusses == word.Length)
-                {
-
-                    Rigidbody2D[] letterRbs = keyboard.GetComponentsInChildren<Rigidbody2D>();
-
-                    foreach (var letRB in letterRbs)
-                    {
-                        letRB.isKinematic = false;
-                        
-                        float x = Random.Range(-10.0f, 10.0f);
-                        letRB.AddForce(new Vector2(x, 10), ForceMode2D.Impulse);
-                    }
-                    mainMusic.Stop();
-                    wonSound.Play();
-                    return;
-                }
-
-                //return;
+                RightGuess(letterObjects[i], letter);
 
             }
+
+            if (numberOfgusses == word.Length)
+            {
+                WonGame();
+
+                    
+                return;
+            }
+
+            //return;
+
+            
         }
 
         if (!didGuessRight)
@@ -71,17 +61,7 @@ public class Guess : MonoBehaviour
 
         if (guessesLeft == 0)
         {
-            Rigidbody2D[] letterRbs = keyboard.GetComponentsInChildren<Rigidbody2D>();
-
-            foreach (var letRB in letterRbs)
-            {
-                letRB.isKinematic = false;
-
-            
-            }
-
-            mainMusic.Stop();
-            lostSound.Play();
+            LostGame();
             return;
         }
 
@@ -96,4 +76,48 @@ public class Guess : MonoBehaviour
 
     }
 
+    void RightGuess(GameObject obj, char letter)
+    {
+        obj.GetComponent<ShowLetter>().Show(letter);
+
+        rightAwnserSound.Play();
+        numberOfgusses++;
+        didGuessRight = true;
+    }
+
+
+    void WonGame()
+    {
+        Rigidbody2D[] letterRbs = keyboard.GetComponentsInChildren<Rigidbody2D>();
+
+        foreach (var letRB in letterRbs)
+        {
+            letRB.isKinematic = false;
+
+            float x = Random.Range(-10.0f, 10.0f);
+            letRB.AddForce(new Vector2(x, 10), ForceMode2D.Impulse);
+        }
+        mainMusic.Stop();
+        wonSound.Play();
+        EndGamePanel.SetActive(true);
+
+    }
+
+
+    void LostGame()
+    {
+        Rigidbody2D[] letterRbs = keyboard.GetComponentsInChildren<Rigidbody2D>();
+
+        foreach (var letRB in letterRbs)
+        {
+            letRB.isKinematic = false;
+
+
+        }
+
+        mainMusic.Stop();
+        lostSound.Play();
+        EndGamePanel.SetActive(true);
+        
+    }
 }

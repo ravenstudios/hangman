@@ -10,6 +10,7 @@ public class ClickLetter : MonoBehaviour
 
     [SerializeField] char c;
     [SerializeField] float fallDelay;
+    Transform trans;
     Rigidbody2D rb;
     BoxCollider2D bc;
 
@@ -18,10 +19,18 @@ public class ClickLetter : MonoBehaviour
         
         rb = GetComponent<Rigidbody2D>();
         bc = GetComponent<BoxCollider2D>();
-
+        trans = GetComponent<Transform>();
 
 
         gameManager = GameObject.Find("GameManager");
+    }
+
+    void Update()
+    {
+        if (trans.position.y < -20)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void SetChar(char chr)

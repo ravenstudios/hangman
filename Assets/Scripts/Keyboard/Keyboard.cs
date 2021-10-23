@@ -13,11 +13,14 @@ public class Keyboard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Vector3 pos = new Vector3(0, 0, 0);
-        
-        
-        
+        MakeKeyboard();
 
+
+    }
+
+    public void MakeKeyboard()
+    {
+        Vector3 pos = new Vector3(0, 0, 0);
         for (int i = 0; i < 26; i++)
         {
             if (i < 10)
@@ -27,12 +30,12 @@ public class Keyboard : MonoBehaviour
 
             else if (i > 9 && i < 19)
             {
-                pos = transform.position + new Vector3(xOffset * i - 10,yOffset * 2, 1);
+                pos = transform.position + new Vector3(xOffset * i - 10, yOffset * 2, 1);
             }
 
             else if (i > 18)
             {
-                pos = transform.position + new Vector3(xOffset * i - 20,yOffset * 3, 1);
+                pos = transform.position + new Vector3(xOffset * i - 20, yOffset * 3, 1);
             }
 
 
@@ -43,12 +46,5 @@ public class Keyboard : MonoBehaviour
             char c = (char)(65 + i);
             obj.GetComponent<ClickLetter>().SetChar(c);
         }
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -14,8 +14,14 @@ public class ShowWord : MonoBehaviour
 
     List<GameObject> letterObjects = new List<GameObject>();
 
-    
+
     void Awake()
+    {
+        SetUpGame();
+    }
+
+
+    public void SetUpGame()
     {
         
         catagory += GetComponentInParent<WordGenerator>().GenerateWord()[0];

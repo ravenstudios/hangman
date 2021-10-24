@@ -107,6 +107,15 @@ public class Guess : MonoBehaviour
 
     void LostGame()
     {
+
+        //******* Show word after loss********
+
+        letterObjects.ForEach(delegate(GameObject letterObj)
+        {
+            char l = letterObj.GetComponent<ShowLetter>().GetChar();
+            letterObj.GetComponent<ShowLetter>().Show(l);
+        });
+
         Rigidbody2D[] letterRbs = keyboard.GetComponentsInChildren<Rigidbody2D>();
 
         foreach (var letRB in letterRbs)

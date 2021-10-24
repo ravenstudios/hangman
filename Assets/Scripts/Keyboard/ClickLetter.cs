@@ -66,6 +66,7 @@ public class ClickLetter : MonoBehaviour
 
     void Explode()
     {
+        bc.enabled = false;
         rb.isKinematic = false;
         bc.enabled = false;
         float x = Random.Range(-10.0f, 10.0f);

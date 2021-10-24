@@ -13,7 +13,7 @@ public class ShowWord : MonoBehaviour
     [SerializeField] float gap;
 
     List<GameObject> letterObjects = new List<GameObject>();
-
+    List<GameObject> catLetters = new List<GameObject>();
 
     void Awake()
     {
@@ -33,14 +33,16 @@ public class ShowWord : MonoBehaviour
         letterObjects = new List<GameObject>();
 
 
-
-        catagory += GetComponentInParent<WordGenerator>().GenerateWord()[0];
+        string[] result = GetComponentInParent<WordGenerator>().GenerateWord();
+        //clear for new game
+        catagory = "";
+        catagory += result[0];
 
         catagory = catagory.ToUpper();
 
-        word = GetComponentInParent<WordGenerator>().GenerateWord()[1];
+        word = result[1];
         
-        Debug.Log("get word function" + word);
+        //Debug.Log("get word function" + word);
 
 
         for (int i = 0; i < word.Length; i++)
@@ -68,18 +70,21 @@ public class ShowWord : MonoBehaviour
         string cat = "CATEGORY";
         for (int i = 0; i < cat.Length; i++)
         {
-            
-
-
-            
             Vector3 v = new Vector3(i - 8, 6, 0);
 
             GameObject categoryLetter = Instantiate(categoryLetterPrefab, v, Quaternion.identity);
             categoryLetter.GetComponent<CategoryLetter>().SetChar(cat[i]);
             categoryLetter.transform.parent = categoryWord1.transform;
-            
-
         }
+
+
+         
+
+
+        //Clear out list for new game
+        catLetters.ForEach(delegate(GameObject catLetter) {
+            Destroy(catLetter);
+        });
 
 
         for (int i = 0; i < catagory.Length; i++)
@@ -94,6 +99,7 @@ public class ShowWord : MonoBehaviour
                 GameObject categoryLetter = Instantiate(categoryLetterPrefab, v, Quaternion.identity);
                 categoryLetter.GetComponent<CategoryLetter>().SetChar(catagory[i]);
                 categoryLetter.transform.parent = categoryWord2.transform;
+                catLetters.Add(categoryLetter);
             }
             
         }

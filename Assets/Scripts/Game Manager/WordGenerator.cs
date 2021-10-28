@@ -37,11 +37,13 @@ public class WordGenerator : MonoBehaviour
         string[] randomCatogory = words[randCatagoryndex];
         int randWordIndex = Random.Range(0, randomCatogory.Length);
         word = randomCatogory[randWordIndex];
+        word = randomCatogory[randWordIndex];
         word = word.ToUpper();
 
-        //Debug.Log(word);
+        Debug.Log(word);
         //Debug.Log(category);
-        string[] result = {category, word }; 
+        string[] result = {category, word };
         return result;
+        
     }
 }

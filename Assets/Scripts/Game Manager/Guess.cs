@@ -39,7 +39,7 @@ public class Guess : MonoBehaviour
 
             }
 
-            if (numberOfGusses == word.Length)
+            if (numberOfGusses == word.Length - NumOfSpaces(word))
             {
                 WonGame();
 
@@ -152,4 +152,19 @@ public class Guess : MonoBehaviour
         guessesLeft = g;
     }
 
+    int NumOfSpaces(string word)
+    {
+        int numOfSpaces = 0;
+
+        foreach (char c in word)
+        {
+            if (c == ' ')
+            {
+                numOfSpaces++;
+            }
+        }
+        return numOfSpaces;
+    }
 }
+
+    

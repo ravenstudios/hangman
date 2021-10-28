@@ -29,7 +29,9 @@ public class Health : MonoBehaviour
         for (int i = 0; i < num; i++)
         {
             Vector3 pos = new Vector3(i, 0, 0) + parentPos.position;
-            potions.Add(Instantiate(prefab, pos, Quaternion.identity));
+            GameObject potion = Instantiate(prefab, pos, Quaternion.identity);
+            potions.Add(potion);
+            potion.transform.parent = gameObject.transform;
         }
         
     }

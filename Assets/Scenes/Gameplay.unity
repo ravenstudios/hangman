@@ -367,8 +367,8 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.9528302, g: 0, b: 0, a: 1}
+  m_Intensity: 0.83
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 230e31020000000037a802dd
   m_LightCookieSprite: {fileID: 0}
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 194.58
-  m_PointLightOuterAngle: 246.46
+  m_PointLightOuterAngle: 197
   m_PointLightInnerRadius: 5.42104
   m_PointLightOuterRadius: 10.097159
   m_PointLightDistance: 3
@@ -400,13 +400,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134865588}
-  m_LocalRotation: {x: -0, y: -0, z: 0.99978936, w: -0.02052376}
-  m_LocalPosition: {x: -0.52, y: 4.11, z: -1.29}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
+  m_LocalPosition: {x: -16.9, y: -0.5, z: -1.29}
+  m_LocalScale: {x: 1, y: 1, z: 270}
   m_Children: []
   m_Father: {fileID: 230009346}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!1 &138423164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,6 +1232,7 @@ Transform:
   - {fileID: 863924124}
   - {fileID: 177008568}
   - {fileID: 134865590}
+  - {fileID: 358066047}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2233,6 +2234,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356000432}
   m_CullTransparentMesh: 1
+--- !u!1 &358066046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 358066047}
+  - component: {fileID: 358066048}
+  m_Layer: 0
+  m_Name: Point Light 2D (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &358066047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358066046}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 24, y: -1.48, z: -1.29}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 230009346}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &358066048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358066046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 0.9528302, g: 0, b: 0, a: 1}
+  m_Intensity: 0.83
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 230e31020000000037a802dd
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 194.58
+  m_PointLightOuterAngle: 246.46
+  m_PointLightInnerRadius: 5.42104
+  m_PointLightOuterRadius: 10.097159
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!4 &383068412
 Transform:
   m_ObjectHideFlags: 0
@@ -5204,8 +5277,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783576419}
   m_LocalRotation: {x: -0.05153395, y: 0.026142143, z: 0.0013494641, w: 0.99832815}
-  m_LocalPosition: {x: 11.1, y: -2.52, z: 1.17}
-  m_LocalScale: {x: 3, y: 3, z: -0.0626}
+  m_LocalPosition: {x: 15.85, y: -2.52, z: 1.17}
+  m_LocalScale: {x: 5, y: 3, z: -0.0626}
   m_Children: []
   m_Father: {fileID: 1253753284}
   m_RootOrder: 0
@@ -5572,7 +5645,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.39
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 230e31020000000037a802dd
   m_LightCookieSprite: {fileID: 0}
@@ -5581,7 +5654,7 @@ MonoBehaviour:
   m_AlphaBlendOnOverlap: 0
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
-  m_PointLightInnerAngle: 67.83
+  m_PointLightInnerAngle: 195
   m_PointLightOuterAngle: 246.46
   m_PointLightInnerRadius: 5.42104
   m_PointLightOuterRadius: 10.097159
@@ -5605,7 +5678,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863924122}
   m_LocalRotation: {x: -0, y: -0, z: 0.99978936, w: -0.02052376}
-  m_LocalPosition: {x: -2.5434003, y: 0.26000237, z: -1.29}
+  m_LocalPosition: {x: -0.17, y: 4.14, z: -1.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 230009346}
@@ -6836,7 +6909,7 @@ GameObject:
   - component: {fileID: 1096436569}
   - component: {fileID: 1096436568}
   m_Layer: 0
-  m_Name: Parametric Light 2D
+  m_Name: Book Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8895,7 +8968,7 @@ GameObject:
   - component: {fileID: 1435711671}
   - component: {fileID: 1435711670}
   m_Layer: 0
-  m_Name: Point Light 2D
+  m_Name: Point Light Right Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8915,7 +8988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
+  m_FalloffIntensity: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
@@ -8926,8 +8999,8 @@ MonoBehaviour:
   m_AlphaBlendOnOverlap: 0
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
-  m_PointLightInnerAngle: 125.69
-  m_PointLightOuterAngle: 246.46
+  m_PointLightInnerAngle: 159
+  m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 6.680836
   m_PointLightOuterRadius: 10.097159
   m_PointLightDistance: 3
